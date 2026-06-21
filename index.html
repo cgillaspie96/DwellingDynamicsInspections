@@ -392,7 +392,7 @@ footer {
 .footer-links a:hover { color: var(--gold); }
 .footer-copy { font-size: 0.75rem; color: rgba(242,237,230,0.3); letter-spacing: 0.05em; }
 .footer-nachi {
-  font-size: 0.75rem; color: var(--lightblue); letter-spacing: 0.08em; text-transform: uppercase;
+  display: flex; justify-content: center; margin-bottom: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -660,7 +660,11 @@ footer {
     <a href="#inspector">About</a>
     <a href="schedule.html">Book Now</a>
   </nav>
-  <p class="footer-nachi">NACHI Certified Professional Inspector</p>
+  <div class="footer-nachi">
+    <a href="https://www.nachi.org/verify?nachiid=NACHI23100603" target="_blank">
+      <img src="https://www.nachi.org/webseals/sb-v2-NACHI23100603.gif" width="98" height="102" alt="Certified by the International Association of Certified Home Inspectors" border="0" />
+    </a>
+  </div>
   <p class="footer-copy">© 2025 Dwelling Dynamics LLC · Parker, Colorado &nbsp;·&nbsp; (303) 961-1522</p>
 </footer>
 
