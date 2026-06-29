@@ -47,12 +47,12 @@ body { font-family: var(--body); background: var(--offwhite); color: var(--aspha
 /* NAV */
 nav {
   background: var(--asphalt);
-  display: flex; align-items: center; justify-content: center;
+  display: flex; align-items: center; justify-content: space-between;
   padding: 0 2.5rem; height: 72px;
   border-bottom: 2px solid var(--darkblue);
 }
 .nav-logo img { height: 38px; }
-.nav-links { display: none; }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a {
   color: var(--offwhite); text-decoration: none;
   font-size: 0.85rem; font-weight: 600;
@@ -61,6 +61,15 @@ nav {
 }
 .nav-links a:hover { color: var(--gold); }
 .nav-links a.active { color: var(--gold); }
+.nav-cta {
+  background: var(--gold); color: var(--asphalt);
+  padding: 0.6rem 1.5rem; font-weight: 700; font-size: 0.85rem;
+  letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+  border: none; cursor: pointer;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--lightblue); }
 
 /* HEADER STRIP */
 .page-header {
@@ -176,8 +185,8 @@ footer {
     <li><a href="index.html#new-builds">New Builds</a></li>
     <li><a href="index.html#process">Process</a></li>
     <li><a href="index.html#inspector">About</a></li>
-    <li><a href="schedule.html" class="active">Book Now</a></li>
   </ul>
+  <a href="schedule.html" class="nav-cta">Book Now</a>
 </nav>
 
 <!-- PAGE HEADER -->
