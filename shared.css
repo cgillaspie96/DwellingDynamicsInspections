@@ -1,0 +1,64 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --asphalt: #1c1614;
+  --darkblue: #1a3a6e;
+  --lightblue: #7ab8d9;
+  --gold: #f5a623;
+  --offwhite: #f2ede6;
+  --white: #ffffff;
+  --red: #c8282b;
+  --display: 'Barlow Condensed', sans-serif;
+  --body: 'Barlow', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--body); color: var(--asphalt); overflow-x: hidden; }
+
+/* NAV */
+nav {
+  background: var(--asphalt);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2.5rem; height: 72px;
+  border-bottom: 2px solid var(--darkblue);
+}
+.nav-logo img { height: 125px; }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  color: var(--offwhite); text-decoration: none;
+  font-size: 0.85rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a.active { color: var(--gold); }
+.nav-cta {
+  background: var(--gold); color: var(--asphalt);
+  padding: 0.6rem 1.5rem; font-weight: 700; font-size: 0.85rem;
+  letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+  border: none; cursor: pointer;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--lightblue); }
+
+/* FOOTER */
+footer {
+  background: var(--asphalt); padding: 3rem 2rem;
+  display: flex; flex-direction: column; align-items: center; gap: 1.5rem;
+  border-top: 3px solid var(--darkblue);
+}
+.footer-links { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+.footer-links a {
+  color: rgba(242,237,230,0.5); text-decoration: none;
+  font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-copy { font-size: 0.75rem; color: rgba(242,237,230,0.3); letter-spacing: 0.05em; }
+.footer-nachi { font-size: 0.75rem; color: var(--lightblue); letter-spacing: 0.08em; text-transform: uppercase; }
+
+@media (max-width: 768px) {
+  nav { padding: 0 1rem; }
+  .nav-links { display: none; }
+}
