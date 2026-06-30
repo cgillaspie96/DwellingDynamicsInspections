@@ -19,7 +19,7 @@ body { font-family: var(--body); color: var(--asphalt); overflow-x: hidden; }
 nav {
   background: var(--asphalt);
   display: flex; align-items: center; justify-content: space-between;
-  padding: 0 2.5rem; height: 135px;
+  padding: 0 2.5rem; height: 145px; overflow: visible;
   border-bottom: 2px solid var(--darkblue);
 }
 .nav-logo img { height: 125px; }
