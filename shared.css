@@ -1,15 +1,22 @@
+@font-face { font-family: 'Espiritu';         src: url('fonts/Espiritu-Regular.otf')   format('opentype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'EspirituCondensed'; src: url('fonts/Espiritu-Condensed.otf') format('opentype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GentleSide';       src: url('fonts/GentleSide.otf')          format('opentype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BNCringeSans';     src: url('fonts/BNCringeSans-Medium.otf') format('opentype'); font-weight: normal; font-style: normal; }
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --asphalt: #1c1614;
-  --darkblue: #1a3a6e;
-  --lightblue: #7ab8d9;
-  --gold: #f5a623;
-  --offwhite: #f2ede6;
+  --asphalt: #22150D;
+  --darkblue: #1A5097;
+  --lightblue: #8CC3E8;
+  --gold: #FFB93C;
+  --offwhite: #F8F7F6;
   --white: #ffffff;
-  --red: #c8282b;
-  --display: 'Barlow Condensed', sans-serif;
-  --body: 'Barlow', sans-serif;
+  --red: #C81F2A;
+  --display: 'GentleSide', sans-serif;
+  --heading: 'Espiritu', sans-serif;
+  --condensed: 'EspirituCondensed', sans-serif;
+  --body: 'BNCringeSans', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -19,14 +26,15 @@ body { font-family: var(--body); color: var(--asphalt); overflow-x: hidden; }
 nav {
   background: var(--asphalt);
   display: flex; align-items: center; justify-content: space-between;
-  padding: 0 2.5rem; height: 145px; overflow: visible;
+  padding: 0 2.5rem; height: 110px; overflow: visible;
   border-bottom: 2px solid var(--darkblue);
 }
-.nav-logo img { height: 125px; }
+.nav-logo img { height: 80px; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a {
   color: var(--offwhite); text-decoration: none;
-  font-size: 0.85rem; font-weight: 600;
+  font-family: var(--condensed);
+  font-size: 0.9rem; font-weight: normal;
   letter-spacing: 0.1em; text-transform: uppercase;
   transition: color 0.2s;
 }
@@ -34,7 +42,7 @@ nav {
 .nav-links a.active { color: var(--gold); }
 .nav-cta {
   background: var(--gold); color: var(--asphalt);
-  padding: 0.6rem 1.5rem; font-weight: 700; font-size: 0.85rem;
+  padding: 0.6rem 1.5rem; font-family: var(--display); font-weight: normal; font-size: 0.9rem;
   letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
   border: none; cursor: pointer;
   clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
@@ -50,12 +58,12 @@ footer {
 }
 .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
 .footer-links a {
-  color: rgba(242,237,230,0.5); text-decoration: none;
+  color: rgba(248,247,246,0.5); text-decoration: none;
   font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
   transition: color 0.2s;
 }
 .footer-links a:hover { color: var(--gold); }
-.footer-copy { font-size: 0.75rem; color: rgba(242,237,230,0.3); letter-spacing: 0.05em; }
+.footer-copy { font-size: 0.75rem; color: rgba(248,247,246,0.3); letter-spacing: 0.05em; }
 .footer-nachi { font-size: 0.75rem; color: var(--lightblue); letter-spacing: 0.08em; text-transform: uppercase; }
 
 @media (max-width: 768px) {
