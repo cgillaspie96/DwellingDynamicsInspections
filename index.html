@@ -345,6 +345,13 @@ body { background: var(--white); }
   transition: background 0.2s; position: relative;
 }
 .btn-dark:hover { background: var(--darkblue); }
+.cta-faq-link {
+  display: block; margin-top: 1.25rem;
+  font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(34,21,13,0.55); text-decoration: none; position: relative;
+  transition: color 0.2s;
+}
+.cta-faq-link:hover { color: var(--asphalt); }
 
 @media (max-width: 768px) {
   .newbuild-inner { grid-template-columns: 1fr; gap: 2rem; }
@@ -660,6 +667,7 @@ body { background: var(--white); }
   <h2>Ready to Get<br>On Track?</h2>
   <p>Book your inspection online in under two minutes.</p>
   <a href="schedule.html" class="btn-dark">Schedule Now</a>
+  <a href="faq.html" class="cta-faq-link">Have questions? Read the FAQ</a>
 </section>
 
 <!-- FOOTER -->
