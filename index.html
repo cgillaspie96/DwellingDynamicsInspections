@@ -423,13 +423,15 @@ body { background: var(--white); }
     </a>
   </div>
   <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#new-builds">New Builds</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#inspector">About</a></li>
-    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="/" class="active">Home</a></li>
+    <li><a href="/faq.html">FAQ</a></li>
+    <li><a href="/home-inspection-colorado.html">Service Areas</a></li>
+    <li><a href="/education.html">Education</a></li>
   </ul>
-  <a href="schedule.html" class="nav-cta">Book Now</a>
+  <div class="nav-right">
+    <a href="/schedule.html" class="nav-cta">Book Now</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var l=document.querySelector('.nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -678,7 +680,8 @@ body { background: var(--white); }
     <a href="#new-builds">New Builds</a>
     <a href="#process">Process</a>
     <a href="#inspector">About</a>
-    <a href="home-inspection-parker-co.html">Parker, CO</a>
+        <a href="/home-inspection-colorado.html">Service Areas</a>
+    <a href="/education.html">Education</a>
     <a href="schedule.html">Book Now</a>
   </nav>
   <div style="display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;padding:1rem 0;border-top:1px solid rgba(242,237,230,0.1);border-bottom:1px solid rgba(242,237,230,0.1);">

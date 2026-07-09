@@ -3,26 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page Not Found | Dwelling Dynamics Home Inspections</title>
-<meta name="robots" content="noindex">
+<title>Home Inspection Service Areas | Colorado Front Range | Dwelling Dynamics</title>
+<meta name="description" content="Why every home - especially new construction - deserves an inspection at every phase. Dwelling Dynamics serves Parker, Castle Rock, Highlands Ranch, Lone Tree, Centennial, and Aurora, Colorado.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.dwellingdynamicsinspections.com/home-inspection-colorado.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.dwellingdynamicsinspections.com/home-inspection-colorado.html">
+<meta property="og:title" content="Home Inspection Service Areas | Colorado Front Range | Dwelling Dynamics">
+<meta property="og:description" content="Why every home - especially new construction - deserves an inspection at every phase. Dwelling Dynamics serves Parker, Castle Rock, Highlands Ranch, Lone Tree, Centennial, and Aurora, Colorado.">
+<meta property="og:image" content="https://www.dwellingdynamicsinspections.com/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dwellingdynamicsinspections.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://www.dwellingdynamicsinspections.com/home-inspection-colorado.html"}
+  ]
+}
+</script>
 <link rel="stylesheet" href="/shared.css">
 <style>
-body { background: var(--offwhite); display: flex; flex-direction: column; min-height: 100vh; }
-main { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 5rem 2rem; }
-.nf-code { font-family: var(--heading); font-size: clamp(5rem, 15vw, 9rem); font-weight: 800; line-height: 1; color: var(--darkblue); }
-.nf-title { font-family: var(--condensed); font-size: 1.1rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--asphalt); margin: 1rem 0 0.75rem; }
-.nf-desc { max-width: 480px; color: var(--asphalt); opacity: 0.7; line-height: 1.7; margin-bottom: 2.5rem; }
-.nf-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
-.nf-btn {
+body { background: var(--white); }
+
+/* PAGE HEADER (matches faq.html) */
+.page-header {
+  background: var(--darkblue);
+  padding: 3rem 2rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-header::after {
+  content: '';
+  display: block;
+  height: 5px;
+  background: repeating-linear-gradient(90deg, var(--gold) 0px, var(--gold) 20px, var(--darkblue) 20px, var(--darkblue) 40px);
+  position: absolute; bottom: 0; left: 0; right: 0;
+}
+.page-header-eyebrow {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem;
+}
+.page-header h1 {
+  font-family: var(--display); font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800; text-transform: uppercase; color: var(--white);
+  line-height: 1; margin-bottom: 0.75rem;
+}
+.page-header h1 span { color: var(--gold); }
+.page-header p {
+  color: rgba(248,247,246,0.75); font-size: 1rem; max-width: 540px; margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* TRUST BAR */
+.trust-bar {
+  background: var(--asphalt);
+  display: flex; justify-content: center; gap: 3rem;
+  padding: 1rem 2rem; flex-wrap: wrap;
+}
+.trust-item {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(248,247,246,0.6);
+}
+.trust-item span { color: var(--gold); }
+
+/* CONTENT */
+.city-wrap { max-width: 860px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+.city-section { margin-bottom: 3rem; }
+.city-section-title {
+  font-family: var(--condensed); font-size: 0.75rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--darkblue);
+  border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; margin-bottom: 1.75rem;
+}
+.city-section h2 {
+  font-family: var(--heading); font-size: 1.5rem; color: var(--asphalt);
+  margin-bottom: 1rem; line-height: 1.25;
+}
+.city-section p { font-size: 0.95rem; line-height: 1.8; color: #444; margin-bottom: 1rem; }
+.city-section a { color: var(--darkblue); font-weight: 600; text-decoration: none; }
+.city-section a:hover { color: var(--gold); }
+.city-section ul { margin: 0 0 1rem 1.25rem; }
+.city-section li { font-size: 0.95rem; line-height: 1.8; color: #444; }
+
+/* SERVICE CARDS */
+.svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+.svc-card {
+  border: 1px solid rgba(26,80,151,0.15); border-top: 4px solid var(--gold);
+  padding: 1.5rem 1.25rem; background: var(--offwhite);
+}
+.svc-card h3 { font-family: var(--heading); font-size: 1.05rem; color: var(--asphalt); margin-bottom: 0.35rem; }
+.svc-price { font-family: var(--condensed); font-size: 0.8rem; letter-spacing: 0.15em; color: var(--darkblue); margin-bottom: 0.6rem; }
+.svc-card p { font-size: 0.875rem; line-height: 1.65; color: #555; margin: 0; }
+
+/* CTA BANNER */
+.city-cta {
+  background: var(--asphalt); text-align: center;
+  padding: 3rem 2rem; border-top: 4px solid var(--gold);
+}
+.city-cta h2 {
+  font-family: var(--display); font-size: clamp(1.5rem, 4vw, 2.25rem);
+  color: var(--white); text-transform: uppercase; margin-bottom: 0.75rem;
+}
+.city-cta p { color: rgba(248,247,246,0.7); margin-bottom: 1.75rem; }
+.city-cta .btn {
   background: var(--gold); color: var(--asphalt);
-  padding: 0.75rem 1.75rem; font-family: var(--display); font-size: 0.9rem;
+  padding: 0.85rem 2rem; font-family: var(--display); font-size: 0.95rem;
   letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
   clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
-  transition: background 0.2s;
+  display: inline-block; transition: background 0.2s;
 }
-.nf-btn:hover { background: var(--lightblue); }
-.nf-btn.secondary { background: var(--darkblue); color: var(--offwhite); }
-.nf-btn.secondary:hover { background: var(--lightblue); color: var(--asphalt); }
+.city-cta .btn:hover { background: var(--lightblue); }
+.city-cta .cta-phone { display: block; margin-top: 1.25rem; color: var(--lightblue); font-size: 0.9rem; letter-spacing: 0.05em; text-decoration: none; }
 </style>
 </head>
 <body>
@@ -35,7 +128,7 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
     <li><a href="/faq.html">FAQ</a></li>
-    <li><a href="/home-inspection-colorado.html">Service Areas</a></li>
+    <li><a href="/home-inspection-colorado.html" class="active">Service Areas</a></li>
     <li><a href="/education.html">Education</a></li>
   </ul>
   <div class="nav-right">
@@ -43,16 +136,67 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var l=document.querySelector('.nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<main>
-  <div class="nf-code">404</div>
-  <p class="nf-title">Page Not Found</p>
-  <p class="nf-desc">The page you're looking for has moved or no longer exists. Our site was recently rebuilt, so old links may be out of date &mdash; everything you need is one click away.</p>
-  <div class="nf-actions">
-    <a class="nf-btn" href="/schedule.html">Book an Inspection</a>
-    <a class="nf-btn secondary" href="/">Go Home</a>
-    <a class="nf-btn secondary" href="/faq.html">Read the FAQ</a>
+
+<div class="page-header">
+  <p class="page-header-eyebrow">Service Areas</p>
+  <h1>Home Inspections Across <span>The Front Range</span></h1>
+  <p>Independent, veteran-owned inspections for Douglas County and the southeast Denver metro.</p>
+</div>
+
+<div class="trust-bar">
+  <div class="trust-item"><span>&#10003;</span> Veteran-Owned</div>
+  <div class="trust-item"><span>&#10003;</span> NACHI Certified</div>
+  <div class="trust-item"><span>&#10003;</span> New Build Specialist</div>
+  <div class="trust-item"><span>&#10003;</span> Thermal Imaging Included</div>
+  <div class="trust-item"><span>&#10003;</span> Report Within 24 Hours</div>
+</div>
+
+<main class="city-wrap">
+
+  <div class="city-section">
+    <p class="city-section-title">Why It Matters</p>
+    <h2>A Home Is the Biggest Purchase Most People Ever Make</h2>
+    <p>A home inspection is the one moment in the buying process where someone works only for you. The seller has an agent. The builder has a sales office. The lender has an appraiser. The inspector is yours &mdash; an independent set of trained eyes on the structure, roof, attic, electrical, plumbing, HVAC, and everything in between, with thermal imaging included on every inspection.</p>
+    <p>The report you get within 24 hours is not just a checklist &mdash; it is documentation. It is what you negotiate repairs with, what you budget from, and what tells you whether the biggest purchase of your life is the right one.</p>
   </div>
+
+  <div class="city-section">
+    <p class="city-section-title">New Construction</p>
+    <h2>New Builds Need Inspections Most of All</h2>
+    <p>It is the most common misconception in real estate: <em>"It is brand new &mdash; what could be wrong with it?"</em> New construction homes still have defects, and the builder&rsquo;s own inspections only check for code compliance &mdash; the legal minimum, not quality. Fast building schedules mean missed details, and a defect sealed inside a wall today is a repair bill years from now.</p>
+    <p>That is why every phase of a new build deserves its own inspection:</p>
+    <div class="svc-grid">
+      <div class="svc-card"><h3>1. Pre-Drywall</h3><p class="svc-price">Before the walls close</p><p>Framing, electrical wiring, plumbing rough-ins, and HVAC ductwork are fully visible exactly once. This is the only window to inspect what is inside the walls before they are sealed permanently.</p></div>
+      <div class="svc-card"><h3>2. Pre-Closing</h3><p class="svc-price">Before you sign</p><p>A complete top-to-bottom inspection of the finished home, giving you documentation of every outstanding issue while the builder still has to fix it.</p></div>
+      <div class="svc-card"><h3>3. 1-Year Warranty</h3><p class="svc-price">Before the warranty expires</p><p>Most builder warranties end at one year. This inspection catches the defects the builder is still obligated to repair &mdash; before that window closes for good.</p></div>
+    </div>
+    <p style="margin-top:1.25rem;">Skipping a phase means gambling on the one part of the house you will never see again, signing without leverage, or paying out of pocket for defects that were the builder&rsquo;s responsibility. The <strong>New Build Full Coverage Bundle</strong> combines all three at bundled pricing &mdash; the most thorough way to protect a new build investment. Details in the <a href="/faq.html">FAQ</a>.</p>
+  </div>
+
+  <div class="city-section">
+    <p class="city-section-title">Where We Work</p>
+    <h2>Communities We Serve</h2>
+    <p>Dwelling Dynamics is based in Parker and serves Douglas County and the southeast Denver metro:</p>
+    <ul>
+      <li><a href="/home-inspection-parker-co.html"><strong>Parker, CO</strong></a> &mdash; our home base. See the dedicated Parker page for local soil, radon, and new-construction details.</li>
+      <li>Castle Rock</li>
+      <li>Highlands Ranch</li>
+      <li>Lone Tree</li>
+      <li>Centennial</li>
+      <li>Aurora</li>
+    </ul>
+    <p>Outside these areas? <a href="tel:3039611522">Call us</a> &mdash; we regularly travel along the Front Range.</p>
+  </div>
+
 </main>
+
+<div class="city-cta">
+  <h2>Protect Your Investment</h2>
+  <p>Online booking takes under two minutes. Your report arrives within 24 hours of the inspection.</p>
+  <a class="btn" href="/schedule.html">Schedule Now</a>
+  <a class="cta-phone" href="tel:3039611522">Or call (303) 961-1522</a>
+</div>
+
 <footer>
   <nav class="footer-links" aria-label="Footer">
     <a href="/">Home</a>

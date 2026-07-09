@@ -66,7 +66,22 @@ footer {
 .footer-copy { font-size: 0.75rem; color: rgba(248,247,246,0.3); letter-spacing: 0.05em; }
 .footer-nachi { font-size: 0.75rem; color: var(--lightblue); letter-spacing: 0.08em; text-transform: uppercase; }
 
+.nav-right { display: flex; align-items: center; gap: 1rem; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.4rem; }
+.nav-toggle span { display: block; width: 26px; height: 3px; background: var(--offwhite); margin: 5px 0; border-radius: 2px; }
+
 @media (max-width: 768px) {
-  nav { padding: 0 1rem; }
-  .nav-links { display: none; }
+  nav { padding: 0 0.75rem; height: 80px; position: relative; }
+  .nav-logo img { height: 56px; }
+  .nav-cta { padding: 0.5rem 0.9rem; font-size: 0.8rem; white-space: nowrap; }
+  .nav-right { gap: 0.5rem; }
+  .nav-links {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--asphalt); flex-direction: column; gap: 0;
+    padding: 0.5rem 0 1rem; border-bottom: 2px solid var(--darkblue);
+    z-index: 1000;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li a { display: block; padding: 0.85rem 2rem; font-size: 1rem; }
+  .nav-toggle { display: block; }
 }

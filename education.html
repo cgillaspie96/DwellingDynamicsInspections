@@ -3,26 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page Not Found | Dwelling Dynamics Home Inspections</title>
-<meta name="robots" content="noindex">
+<title>Homeowner Education | Dwelling Dynamics Home Inspections</title>
+<meta name="description" content="What a home inspection covers, why every phase of new construction needs inspecting, radon basics, and sewer scopes - homeowner education from a NACHI certified Colorado inspector.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.dwellingdynamicsinspections.com/education.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.dwellingdynamicsinspections.com/education.html">
+<meta property="og:title" content="Homeowner Education | Dwelling Dynamics Home Inspections">
+<meta property="og:description" content="What a home inspection covers, why every phase of new construction needs inspecting, radon basics, and sewer scopes - homeowner education from a NACHI certified Colorado inspector.">
+<meta property="og:image" content="https://www.dwellingdynamicsinspections.com/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dwellingdynamicsinspections.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Education", "item": "https://www.dwellingdynamicsinspections.com/education.html"}
+  ]
+}
+</script>
 <link rel="stylesheet" href="/shared.css">
 <style>
-body { background: var(--offwhite); display: flex; flex-direction: column; min-height: 100vh; }
-main { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 5rem 2rem; }
-.nf-code { font-family: var(--heading); font-size: clamp(5rem, 15vw, 9rem); font-weight: 800; line-height: 1; color: var(--darkblue); }
-.nf-title { font-family: var(--condensed); font-size: 1.1rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--asphalt); margin: 1rem 0 0.75rem; }
-.nf-desc { max-width: 480px; color: var(--asphalt); opacity: 0.7; line-height: 1.7; margin-bottom: 2.5rem; }
-.nf-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
-.nf-btn {
+body { background: var(--white); }
+
+/* PAGE HEADER (matches faq.html) */
+.page-header {
+  background: var(--darkblue);
+  padding: 3rem 2rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-header::after {
+  content: '';
+  display: block;
+  height: 5px;
+  background: repeating-linear-gradient(90deg, var(--gold) 0px, var(--gold) 20px, var(--darkblue) 20px, var(--darkblue) 40px);
+  position: absolute; bottom: 0; left: 0; right: 0;
+}
+.page-header-eyebrow {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem;
+}
+.page-header h1 {
+  font-family: var(--display); font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800; text-transform: uppercase; color: var(--white);
+  line-height: 1; margin-bottom: 0.75rem;
+}
+.page-header h1 span { color: var(--gold); }
+.page-header p {
+  color: rgba(248,247,246,0.75); font-size: 1rem; max-width: 540px; margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* TRUST BAR */
+.trust-bar {
+  background: var(--asphalt);
+  display: flex; justify-content: center; gap: 3rem;
+  padding: 1rem 2rem; flex-wrap: wrap;
+}
+.trust-item {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(248,247,246,0.6);
+}
+.trust-item span { color: var(--gold); }
+
+/* CONTENT */
+.city-wrap { max-width: 860px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+.city-section { margin-bottom: 3rem; }
+.city-section-title {
+  font-family: var(--condensed); font-size: 0.75rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--darkblue);
+  border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; margin-bottom: 1.75rem;
+}
+.city-section h2 {
+  font-family: var(--heading); font-size: 1.5rem; color: var(--asphalt);
+  margin-bottom: 1rem; line-height: 1.25;
+}
+.city-section p { font-size: 0.95rem; line-height: 1.8; color: #444; margin-bottom: 1rem; }
+.city-section a { color: var(--darkblue); font-weight: 600; text-decoration: none; }
+.city-section a:hover { color: var(--gold); }
+.city-section ul { margin: 0 0 1rem 1.25rem; }
+.city-section li { font-size: 0.95rem; line-height: 1.8; color: #444; }
+
+/* SERVICE CARDS */
+.svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+.svc-card {
+  border: 1px solid rgba(26,80,151,0.15); border-top: 4px solid var(--gold);
+  padding: 1.5rem 1.25rem; background: var(--offwhite);
+}
+.svc-card h3 { font-family: var(--heading); font-size: 1.05rem; color: var(--asphalt); margin-bottom: 0.35rem; }
+.svc-price { font-family: var(--condensed); font-size: 0.8rem; letter-spacing: 0.15em; color: var(--darkblue); margin-bottom: 0.6rem; }
+.svc-card p { font-size: 0.875rem; line-height: 1.65; color: #555; margin: 0; }
+
+/* CTA BANNER */
+.city-cta {
+  background: var(--asphalt); text-align: center;
+  padding: 3rem 2rem; border-top: 4px solid var(--gold);
+}
+.city-cta h2 {
+  font-family: var(--display); font-size: clamp(1.5rem, 4vw, 2.25rem);
+  color: var(--white); text-transform: uppercase; margin-bottom: 0.75rem;
+}
+.city-cta p { color: rgba(248,247,246,0.7); margin-bottom: 1.75rem; }
+.city-cta .btn {
   background: var(--gold); color: var(--asphalt);
-  padding: 0.75rem 1.75rem; font-family: var(--display); font-size: 0.9rem;
+  padding: 0.85rem 2rem; font-family: var(--display); font-size: 0.95rem;
   letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
   clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
-  transition: background 0.2s;
+  display: inline-block; transition: background 0.2s;
 }
-.nf-btn:hover { background: var(--lightblue); }
-.nf-btn.secondary { background: var(--darkblue); color: var(--offwhite); }
-.nf-btn.secondary:hover { background: var(--lightblue); color: var(--asphalt); }
+.city-cta .btn:hover { background: var(--lightblue); }
+.city-cta .cta-phone { display: block; margin-top: 1.25rem; color: var(--lightblue); font-size: 0.9rem; letter-spacing: 0.05em; text-decoration: none; }
 </style>
 </head>
 <body>
@@ -36,23 +129,72 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
     <li><a href="/">Home</a></li>
     <li><a href="/faq.html">FAQ</a></li>
     <li><a href="/home-inspection-colorado.html">Service Areas</a></li>
-    <li><a href="/education.html">Education</a></li>
+    <li><a href="/education.html" class="active">Education</a></li>
   </ul>
   <div class="nav-right">
     <a href="/schedule.html" class="nav-cta">Book Now</a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var l=document.querySelector('.nav-links');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<main>
-  <div class="nf-code">404</div>
-  <p class="nf-title">Page Not Found</p>
-  <p class="nf-desc">The page you're looking for has moved or no longer exists. Our site was recently rebuilt, so old links may be out of date &mdash; everything you need is one click away.</p>
-  <div class="nf-actions">
-    <a class="nf-btn" href="/schedule.html">Book an Inspection</a>
-    <a class="nf-btn secondary" href="/">Go Home</a>
-    <a class="nf-btn secondary" href="/faq.html">Read the FAQ</a>
+
+<div class="page-header">
+  <p class="page-header-eyebrow">Homeowner Education</p>
+  <h1>Know Your <span>Home</span></h1>
+  <p>Straight answers on inspections, new builds, radon, and sewer lines &mdash; from the inspector&rsquo;s side of the flashlight.</p>
+</div>
+
+<div class="trust-bar">
+  <div class="trust-item"><span>&#10003;</span> Veteran-Owned</div>
+  <div class="trust-item"><span>&#10003;</span> NACHI Certified</div>
+  <div class="trust-item"><span>&#10003;</span> New Build Specialist</div>
+  <div class="trust-item"><span>&#10003;</span> Thermal Imaging Included</div>
+  <div class="trust-item"><span>&#10003;</span> Report Within 24 Hours</div>
+</div>
+
+<main class="city-wrap">
+
+  <div class="city-section">
+    <p class="city-section-title">The Basics</p>
+    <h2>What a Home Inspection Actually Covers</h2>
+    <p>A full inspection covers the structure, roof, attic, insulation, HVAC systems, electrical panels and wiring, plumbing, water heater, interior finishes, windows, doors, and site grading. Thermal imaging is included on every inspection &mdash; it reveals moisture intrusion, missing insulation, and overheating circuits that are invisible to the eye. Every finding is validated before your report is delivered, within 24 hours of the inspection.</p>
   </div>
+
+  <div class="city-section">
+    <p class="city-section-title">New Construction</p>
+    <h2>The Three Phases of a New Build &mdash; and Why Each One Matters</h2>
+    <p><strong>Pre-drywall:</strong> the only moment framing, wiring, plumbing rough-ins, and ductwork are visible. Once drywall goes up, everything behind it is sealed permanently &mdash; inspected or not.</p>
+    <p><strong>Pre-closing:</strong> a complete inspection of the finished home before you sign, so every defect is documented while the builder still has to fix it.</p>
+    <p><strong>1-year warranty:</strong> most builder warranties expire at one year. An inspection just before that deadline catches everything the builder is still obligated to repair.</p>
+    <p>Read more about inspecting every phase on our <a href="/home-inspection-colorado.html">service areas page</a>, or see bundle pricing in the <a href="/faq.html">FAQ</a>.</p>
+  </div>
+
+  <div class="city-section">
+    <p class="city-section-title">Radon 101</p>
+    <h2>The Invisible Risk in Colorado Homes</h2>
+    <p>Radon is a colorless, odorless radioactive gas produced by uranium decay in soil &mdash; and Colorado has one of the highest radon rates in the country. It is the second leading cause of lung cancer in the US. The EPA action threshold is 4 pCi/L, and the only way to know your home&rsquo;s level is to test. Testing starts at $200, or $150 bundled with an inspection.</p>
+  </div>
+
+  <div class="city-section">
+    <p class="city-section-title">Sewer Scopes 101</p>
+    <h2>The Most Expensive Thing You Cannot See</h2>
+    <p>A sewer scope sends a camera down the main sewer line from the house to the city connection, identifying cracks, blockages, root intrusion, belly sections where waste pools, and pipe material. Sewer repairs can run thousands of dollars &mdash; a $175 scope ($150 bundled) is cheap insurance on a line no surface inspection can see.</p>
+  </div>
+
+  <div class="city-section">
+    <p class="city-section-title">More Questions?</p>
+    <h2>The FAQ Goes Deeper</h2>
+    <p>Pricing, scheduling, discounts, what to expect on inspection day &mdash; it is all in the <a href="/faq.html">FAQ</a>. This education library will keep growing, so check back.</p>
+  </div>
+
 </main>
+
+<div class="city-cta">
+  <h2>Protect Your Investment</h2>
+  <p>Online booking takes under two minutes. Your report arrives within 24 hours of the inspection.</p>
+  <a class="btn" href="/schedule.html">Schedule Now</a>
+  <a class="cta-phone" href="tel:3039611522">Or call (303) 961-1522</a>
+</div>
+
 <footer>
   <nav class="footer-links" aria-label="Footer">
     <a href="/">Home</a>
